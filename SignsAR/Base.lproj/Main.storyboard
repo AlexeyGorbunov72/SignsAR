@@ -18,14 +18,17 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </arscnView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJM-bM-7cV">
-                                <rect key="frame" x="210" y="855" width="20" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJM-bM-7cV">
+                                <rect key="frame" x="187" y="838" width="40" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="Geu-DU-0Lp"/>
                                     <constraint firstAttribute="height" constant="44" id="fGi-b6-lTg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" image="plus.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="pressPlusButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="17o-YD-cDg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -46,6 +49,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="120"/>
+        </scene>
+        <!--Add Text View Controller-->
+        <scene sceneID="8Hh-bL-WlD">
+            <objects>
+                <viewController storyboardIdentifier="addTextViewController" id="Oud-G1-R2e" customClass="AddTextViewController" customModule="SignsAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="840-TY-fWi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пиши сюда свой текст дурацкий" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BTp-JS-FUf">
+                                <rect key="frame" x="12" y="68" width="390" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RN0-1o-3qh">
+                                <rect key="frame" x="180.5" y="142" width="53" height="30"/>
+                                <state key="normal" title="Готово!"/>
+                                <connections>
+                                    <action selector="pressReadyButton:" destination="Oud-G1-R2e" eventType="touchUpInside" id="x6F-gN-pDc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BTp-JS-FUf" firstAttribute="top" secondItem="nAM-eE-9bp" secondAttribute="top" constant="24" id="4uV-7e-q72"/>
+                            <constraint firstItem="RN0-1o-3qh" firstAttribute="top" secondItem="BTp-JS-FUf" secondAttribute="bottom" constant="40" id="5Ve-fv-gln"/>
+                            <constraint firstItem="BTp-JS-FUf" firstAttribute="leading" secondItem="nAM-eE-9bp" secondAttribute="leading" constant="12" id="NIb-Iw-uLu"/>
+                            <constraint firstItem="nAM-eE-9bp" firstAttribute="trailing" secondItem="BTp-JS-FUf" secondAttribute="trailing" constant="12" id="RrZ-9U-Kew"/>
+                            <constraint firstItem="RN0-1o-3qh" firstAttribute="centerX" secondItem="nAM-eE-9bp" secondAttribute="centerX" id="ShF-o2-xfY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nAM-eE-9bp"/>
+                    </view>
+                    <connections>
+                        <outlet property="readyButton" destination="RN0-1o-3qh" id="XCk-fA-OEN"/>
+                        <outlet property="textField" destination="BTp-JS-FUf" id="W2j-UW-uzg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ac7-up-LI6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869.56521739130437" y="119.86607142857142"/>
         </scene>
     </scenes>
     <resources>

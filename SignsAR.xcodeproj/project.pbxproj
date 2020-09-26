@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CAB3829F251FF644000E7680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3829E251FF644000E7680 /* AppDelegate.swift */; };
-		CAB382A1251FF644000E7680 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB382A0251FF644000E7680 /* art.scnassets */; };
 		CAB382A3251FF644000E7680 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB382A2251FF644000E7680 /* ViewController.swift */; };
 		CAB382A6251FF644000E7680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB382A4251FF644000E7680 /* Main.storyboard */; };
 		CAB382A8251FF647000E7680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB382A7251FF647000E7680 /* Assets.xcassets */; };
 		CAB382AB251FF647000E7680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB382A9251FF647000E7680 /* LaunchScreen.storyboard */; };
+		CAB382B3252001DA000E7680 /* AddTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB382B2252001DA000E7680 /* AddTextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CAB3829B251FF644000E7680 /* SignsAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignsAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB3829E251FF644000E7680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAB382A0251FF644000E7680 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		CAB382A2251FF644000E7680 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAB382A5251FF644000E7680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAB382A7251FF647000E7680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAB382AA251FF647000E7680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAB382AC251FF647000E7680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB382B2252001DA000E7680 /* AddTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				CAB3829E251FF644000E7680 /* AppDelegate.swift */,
-				CAB382A0251FF644000E7680 /* art.scnassets */,
 				CAB382A2251FF644000E7680 /* ViewController.swift */,
 				CAB382A4251FF644000E7680 /* Main.storyboard */,
 				CAB382A7251FF647000E7680 /* Assets.xcassets */,
 				CAB382A9251FF647000E7680 /* LaunchScreen.storyboard */,
 				CAB382AC251FF647000E7680 /* Info.plist */,
+				CAB382B2252001DA000E7680 /* AddTextViewController.swift */,
 			);
 			path = SignsAR;
 			sourceTree = "<group>";
@@ -125,7 +125,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAB382A1251FF644000E7680 /* art.scnassets in Resources */,
 				CAB382AB251FF647000E7680 /* LaunchScreen.storyboard in Resources */,
 				CAB382A8251FF647000E7680 /* Assets.xcassets in Resources */,
 				CAB382A6251FF644000E7680 /* Main.storyboard in Resources */,
@@ -141,6 +140,7 @@
 			files = (
 				CAB382A3251FF644000E7680 /* ViewController.swift in Sources */,
 				CAB3829F251FF644000E7680 /* AppDelegate.swift in Sources */,
+				CAB382B3252001DA000E7680 /* AddTextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
